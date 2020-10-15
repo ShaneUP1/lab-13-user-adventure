@@ -25,7 +25,7 @@ export default [
             a hole in your costume. Another grabs the bowl from you and they all walk off, leaving
             you bruised up with a busted costume and no candy.
         `,
-            costume: -10,
+            chp: -10,
             candy: 0
         }, {
             id: 'take-one-piece',
@@ -35,7 +35,7 @@ export default [
             out to begin with. You walk up and grab a piece and realize they're only single hershey's
             kisses so you grab a few, toss them in your bag and walk on.
         `,
-            costume: 0,
+            chp: 0,
             candy: 5
         }, {
             id: 'roll-the-yard',
@@ -48,7 +48,7 @@ export default [
             pulls up and two officers get out. It turns out their neighbors across the street saw
             you and they called it in. BUSTED. Looks like you're getting an escort home!
         `,
-            costume: 0,
+            chp: 0,
             candy: 0
         }]
     },
@@ -76,7 +76,7 @@ export default [
                 at you to stop, reaches back in to her bowl and gives you another handful. 
                 SCORE!
             `,
-            costume: 0,
+            chp: 0,
             candy: 15
         }, {
             id: 'scare-her',
@@ -88,7 +88,7 @@ export default [
                 and she jumps back causing some of her candy to fall to the ground. She slams the door
                 immediately. You grab the candy and move on.
             `,
-            costume: 0,
+            chp: 0,
             candy: 5
         }, {
             id: 'sillystring',
@@ -101,7 +101,7 @@ export default [
                 as you walk off that you forget there's a step down and you trip, falling and 
                 tearing your costume.
             `,
-            costume: -10,
+            chp: -10,
             gold: 0
         }]
     },
@@ -134,7 +134,7 @@ export default [
                 As you turn to leave the jack-o-lantern you thought was fake starts to standup from 
                 it's chair. It scares the hell out of you so you take off running!
             `,
-            costume: 0,
+            chp: 0,
             candy: 10
         }, {
             id: 'egg-him',
@@ -146,7 +146,7 @@ export default [
                 some egg on him. Now he's pissed though. He drop the candy bowl and comes running out of the house. 
                 You take off equally as fast and luckily you get away, but not after breaking a sweat!
             `,
-            costume: 0,
+            chp: 0,
             candy: 0
         }, {
             id: 'ask-for-more',
@@ -159,7 +159,7 @@ export default [
                 your bag of candy and pulls out a handful. Before you realize what's happened he's already 
                 stepped back inside and slammed the door. I guess he was right...
             `,
-            costume: 0,
+            chp: 0,
             candy: -5
         }]
     },
