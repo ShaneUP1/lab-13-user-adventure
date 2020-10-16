@@ -2,6 +2,16 @@ const USER = 'USER';
 
 
 
+export function completedAllHouses(houses, user) {
+    for (let i = 0; i < houses.length; i++) {
+        const house = houses[i];
+        if (!user.completed[house.id]) {
+            return false;
+        }
+    }
+    return true;
+}
+
 
 export function playerInfo() {
     const name = document.querySelector('#name');
@@ -13,8 +23,8 @@ export function playerInfo() {
 
     name.textContent = user.name;
     costume.src = '../assets/' + user.costume + '.png';
-    chp.textContent = user.chp;
-    candy.textContent = user.candy;
+    chp.textContent = "chp: " + user.chp;
+    candy.textContent = "candy: " + user.candy;
 }
 
 

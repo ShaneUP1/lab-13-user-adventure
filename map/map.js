@@ -1,8 +1,17 @@
 import houses from '../data.js';
-import { playerInfo } from '../utils.js';
+import { getUser, playerInfo, completedAllHouses } from '../utils.js';
 
 
 playerInfo();
+const user = getUser();
+
+
+console.log(houses);
+console.log(user);
+console.log(completedAllHouses(houses, user));
+if (user.chp === 0 || completedAllHouses(houses, user)) {
+    window.location = '../results';
+}
 
 
 const ul = document.querySelector('ul');

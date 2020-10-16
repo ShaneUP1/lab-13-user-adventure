@@ -12,11 +12,35 @@ form {
     align-items: flex-start;
 }
 
-img {
+section > img {
     width: 900px;
     height: auto;
 }
 
-h1 {
-    font-size: 36px;
+button {
+    margin-top: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    height: 90px;
+    box-shadow: var(--shadow);
+}
+
+.health {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#name {
+    font-size: 22px;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

@@ -1,7 +1,10 @@
 import houses from '../data.js';
-import { findById } from '../utils.js';
+import { findById, getUser, playerInfo, saveUser } from '../utils.js';
 
+playerInfo();
+const user = getUser();
 const searchParams = new URLSearchParams(window.location.search);
+const houseId = searchParams.get('id');
 const section = document.querySelector('section');
 
 const id = searchParams.get('id');
@@ -21,7 +24,6 @@ div.textContent = house.description;
 const form = document.createElement('form');
 section.append(img, h1, div, form);
 
-console.log(house.choices);
 
 house.choices.forEach(choice => {
     const label = document.createElement('label');
@@ -34,13 +36,39 @@ house.choices.forEach(choice => {
 
     span.textContent = choice.description;
 
-
     label.append(radio, span);
     form.appendChild(label);
 
 });
 
 const button = document.createElement('button');
-
 button.textContent = 'Do it!';
-section.appendChild(button);
+form.appendChild(button);
+console.log(house.id);
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+
+    const formData = new FormData(form);
+    const choiceId = formData.get('choices');
+    const houseChoice = house.choices;
+
+    const trickOrTreat = findById(houseChoice, choiceId);
+    user.chp += trickOrTreat.chp;
+    user.candy += trickOrTreat.candy;
+
+
+
+    user.completed[houseId] = true;
+
+
+    saveUser(user);
+    playerInfo();
+
+    window.location.href = '../map/index.html';
+
+});
+
+
+
