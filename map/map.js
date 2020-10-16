@@ -1,4 +1,9 @@
 import houses from '../data.js';
+import { playerInfo } from '../utils.js';
+
+
+playerInfo();
+
 
 const ul = document.querySelector('ul');
 

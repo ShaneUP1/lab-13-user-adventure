@@ -37,7 +37,9 @@ house.choices.forEach(choice => {
     label.append(radio, span);
     form.appendChild(label);
 
-
-
-
 });
+
+const button = document.createElement('button');
+
+button.textContent = 'Do it!';
+section.appendChild(button);

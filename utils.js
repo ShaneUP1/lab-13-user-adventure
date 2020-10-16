@@ -2,6 +2,22 @@ const USER = 'USER';
 
 
 
+
+export function playerInfo() {
+    const name = document.querySelector('name');
+    const costume = document.querySelector('costume');
+    const chp = document.querySelector('chp');
+    const candy = document.querySelector('candy');
+
+    const user = getUser();
+    console.log(user.name);
+    user.name = name.textContent;
+    costume.src = './assets/' + user.costume + '.png';
+    chp.textContent = user.chp;
+    candy.textContent = user.candy;
+}
+
+
 export function findById(someArray, id) {
     for (let i = 0; i < someArray.length; i++) {
         const item = someArray[i];
@@ -17,7 +33,7 @@ export function saveUser(user) {
     localStorage.setItem(USER, stringyUser);
 }
 
-export function getUser(USER) {
+export function getUser() {
     const stringyUser = localStorage.getItem(USER);
 
     return JSON.parse(stringyUser);

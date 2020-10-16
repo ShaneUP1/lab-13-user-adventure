@@ -29,7 +29,7 @@ export default [
             candy: 0
         }, {
             id: 'take-one-piece',
-            description: 'Be honest and just take a piece or two.',
+            description: 'Be honest and just take a piece or two',
             result: `
             Yea, it's lame that they're not even home to hand out candy but at least they put some
             out to begin with. You walk up and grab a piece and realize they're only single hershey's
@@ -39,7 +39,7 @@ export default [
             candy: 5
         }, {
             id: 'roll-the-yard',
-            description: 'Play a trick: roll the yard',
+            description: 'Play a trick!',
             result: `
             These people aren't home and there's nobody around, so what a great time to put that
             toilet paper your brought with you to use. There are a few trees in the front yard, so you 
@@ -69,7 +69,7 @@ export default [
         `,
         choices: [{
             id: 'accept-candy',
-            description: 'Smile and accpet the candy',
+            description: 'Smile and accept the candy',
             result: `
                 She seems nice enough, and afterall, these are your neighbors so you accept
                 the candy and tell her thanks. As you start to turn and walk off she calls 
@@ -92,7 +92,7 @@ export default [
             candy: 5
         }, {
             id: 'sillystring',
-            description: 'Play a trick.',
+            description: 'Play a trick!',
             result: `
                 The candy looks good but you're out for mischief tonight. As she reaches to 
                 give you the candy you grab the silly-string from your back pocket and start
@@ -125,7 +125,7 @@ export default [
         `,
         choices: [{
             id: 'accept-candy',
-            description: 'Give him and anser and ask for some candy.',
+            description: 'Give him an answer and ask for some candy',
             result: `
                 Well, it's not the question you want to hear, but it's clear that these people
                 take things to another level here, so perhaps it's warranted. Besides, he's huge 
@@ -150,7 +150,7 @@ export default [
             candy: 0
         }, {
             id: 'ask-for-more',
-            description: 'Ask him for more.',
+            description: 'Ask him for more candy',
             result: `
                 "Come on man", you exclaim. "Look at all that candy you have, surely you can spare 
                 some more." He's not going for it though. "If you don't like this, you're definitely 
