@@ -18,4 +18,5 @@ form.addEventListener('submit', (e) => {
         completed: {}
     };
     saveUser(user);
+    window.location.href = './map/index.html';
 });

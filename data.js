@@ -162,4 +162,4 @@ export default [
             chp: 0,
             candy: -5
         }]
-    },
+    }];
