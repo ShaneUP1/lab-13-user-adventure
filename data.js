@@ -10,7 +10,7 @@ export default [
         //     top: '89%',
         //     left: '44%'
         // },
-        image: '',
+        image: '../assets/boring-house.png',
         description: `
         These people clearly don't celebrate Halloween BUT there is candy on the front porch! 
         The bowl of candy is just sitting there on a chair. What do you do?
@@ -59,7 +59,7 @@ export default [
         //     top: '89%',
         //     left: '44%'
         // },
-        image: '',
+        image: '../assets/friendly-ghost.png',
         description: `
             This house has some decorations but it's clear they're not out to scare off 
             anyone. The hard is filled with smiling little inflatable ghost and there is some
@@ -112,7 +112,7 @@ export default [
         //     top: '89%',
         //     left: '44%'
         // },
-        image: '',
+        image: '../assets/haunted-house.png',
         description: `
             This house has it all! The yard is covered in gravestones with skeletons popping 
             up out of the grass. There is fog and cobwebb everywhere as well as spookey music 

@@ -11,6 +11,7 @@ const house = findById(houses, id);
 const img = document.createElement('img');
 img.src = house.image;
 
+
 const h1 = document.createElement('h1');
 h1.textContent = house.title;
 
