@@ -4,15 +4,15 @@ const USER = 'USER';
 
 
 export function playerInfo() {
-    const name = document.querySelector('name');
-    const costume = document.querySelector('costume');
-    const chp = document.querySelector('chp');
-    const candy = document.querySelector('candy');
+    const name = document.querySelector('#name');
+    const costume = document.querySelector('#costume');
+    const chp = document.querySelector('#chp');
+    const candy = document.querySelector('#candy');
 
     const user = getUser();
-    console.log(user.name);
-    user.name = name.textContent;
-    costume.src = './assets/' + user.costume + '.png';
+
+    name.textContent = user.name;
+    costume.src = '../assets/' + user.costume + '.png';
     chp.textContent = user.chp;
     candy.textContent = user.candy;
 }
