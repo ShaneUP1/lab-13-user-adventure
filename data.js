@@ -53,7 +53,7 @@ export default [
         }]
     },
     {
-        id: 'old-lady',
+        id: 'friendly-ghost',
         title: 'The Friendly Ghost',
         // map: {
         //     top: '89%',

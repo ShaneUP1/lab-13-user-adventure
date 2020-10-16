@@ -30,7 +30,6 @@ body {
 
 label {
     display: block;
-    ;
 }
 
 img {
@@ -60,7 +59,7 @@ input[name="name"] {
     margin: 30px;
 }
 
-[type=radio] {
+[name=costume] {
     display: none;
 }
 

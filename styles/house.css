@@ -1,0 +1,13 @@
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    margin-top: 15px;
+    
+}
+
+form {
+    align-items: flex-start;
+}
