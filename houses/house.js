@@ -26,6 +26,7 @@ const form = document.createElement('form');
 
 
 const resultDiv = document.createElement('div');
+resultDiv.setAttribute('id', 'choice-result');
 resultDiv.classList.add('hidden');
 
 section.append(img, h1, div, form, resultDiv);
@@ -80,7 +81,9 @@ form.addEventListener('submit', (e) => {
     nextButton.textContent = 'To the next house!';
     resultDiv.appendChild(nextButton);
 
-
+    nextButton.addEventListener('click', () => {
+        window.location.href = '../map/index.html';
+    });
 
 });
 
