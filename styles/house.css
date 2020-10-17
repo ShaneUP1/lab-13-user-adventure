@@ -8,6 +8,11 @@ label {
     
 }
 
+adf {
+    display: flex;
+    flex-direction: column;
+}
+
 form {
     align-items: flex-start;
 }
@@ -19,6 +24,10 @@ section > img {
 
 button {
     margin-top: 15px;
+}
+
+.hidden {
+    display: none;
 }
 
 header {

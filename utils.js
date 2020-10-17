@@ -2,6 +2,8 @@ const USER = 'USER';
 
 
 
+
+
 export function completedAllHouses(houses, user) {
     for (let i = 0; i < houses.length; i++) {
         const house = houses[i];

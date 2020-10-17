@@ -62,7 +62,7 @@ export default [
         image: '../assets/friendly-ghost.png',
         description: `
             This house has some decorations but it's clear they're not out to scare off 
-            anyone. The hard is filled with smiling little inflatable ghost and there is some
+            anyone. The yard is filled with smiling little inflatable ghost and there is some
             fake cobwebb around the door. You give a knock and a nice older lady answers. She
             thinks your costume is cute and has a GIANT bowl of candy in her hands. She grabs one 
             and offers it to you. What do you do?

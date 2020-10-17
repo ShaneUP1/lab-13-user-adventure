@@ -7,6 +7,7 @@ const searchParams = new URLSearchParams(window.location.search);
 const houseId = searchParams.get('id');
 const section = document.querySelector('section');
 
+
 const id = searchParams.get('id');
 
 const house = findById(houses, id);
@@ -22,7 +23,12 @@ const div = document.createElement('div');
 div.textContent = house.description;
 
 const form = document.createElement('form');
-section.append(img, h1, div, form);
+
+
+const resultDiv = document.createElement('div');
+resultDiv.classList.add('hidden');
+
+section.append(img, h1, div, form, resultDiv);
 
 
 house.choices.forEach(choice => {
@@ -44,29 +50,37 @@ house.choices.forEach(choice => {
 const button = document.createElement('button');
 button.textContent = 'Do it!';
 form.appendChild(button);
-console.log(house.id);
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-
     const formData = new FormData(form);
     const choiceId = formData.get('choices');
-    const houseChoice = house.choices;
 
+
+    const thisChoice = findById(house.choices, choiceId);
+    resultDiv.textContent = thisChoice.result;
+
+    resultDiv.classList.toggle('hidden');
+    form.classList.toggle('hidden');
+    div.classList.toggle('hidden');
+
+    const houseChoice = house.choices;
     const trickOrTreat = findById(houseChoice, choiceId);
+
     user.chp += trickOrTreat.chp;
     user.candy += trickOrTreat.candy;
-
-
-
     user.completed[houseId] = true;
-
 
     saveUser(user);
     playerInfo();
 
-    window.location.href = '../map/index.html';
+    const nextButton = document.createElement('button');
+    nextButton.textContent = 'To the next house!';
+    resultDiv.appendChild(nextButton);
+
+
 
 });
 
